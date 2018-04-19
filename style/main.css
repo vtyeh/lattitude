@@ -252,7 +252,7 @@ body {
 /* Customize for mobile */
 @media (max-width: 480px) {
 .navbar-header {
-	padding-left: 30px;
+	padding-left: 15px;
 }
 
 .landingImage{
