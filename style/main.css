@@ -261,13 +261,13 @@ body {
 	background-color: #ffff;
 	margin: 35px;
 	margin-top: 30px;
+	padding:none;
 }
 
 .visualizations {
 	margin: 35px;
 	margin-bottom: 75px;
 	background-color: #ffff;
-	padding:none;
 }
 
 .vizImages {
@@ -277,11 +277,10 @@ body {
 .comparisons {
 	margin-left: 10px;
 	margin-right: 10px;
-	padding: none;
 }
 
 .comparisons img {
-	width: 130px;
+	width: 200px;
 	height: auto;
 }
 
