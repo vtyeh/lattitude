@@ -1,0 +1,250 @@
+/* Make the background a light grey */
+body {
+	margin: 0;
+	background-color: #f0f0f0;
+}
+
+/* Make the links in the navigation bar grey */
+.navbar a {
+	color: grey;
+}
+
+/* Shift the lattitude logo to the right */
+.navbar-header {
+	padding-left: 65px;
+}
+
+/* Customize the logo */
+.navbar-header a {
+	font-family: Georgia;
+	color: #ffff;
+	font-weight: bold;
+	background-color: #08a59b;
+}
+
+/* Change the navigation bar to white */
+.navbar {
+	background-color: #ffff;
+	border:none;
+}
+
+
+/* Make the icon bars white so you can see it */
+.icon-bar {
+	background-color: #ffff;
+}
+
+/* Change navigation bar color for small screen so you can see the white icon-bars */
+@media (max-width: 767px){
+.navbar {
+	background-color: #08a59b;
+	border:none;
+}
+}
+
+/* Make the drop-down menu white */
+.navbar li {
+	background-color: #ffff;
+}
+
+/* Change the size of images for thumbnails */
+.vizThumb{
+	width: 150px;
+	height: 150px;
+}
+
+/* Get rid of panel decorations*/
+.panel {
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+/* Customize the main panel for landing and visualization pages */
+.summary {
+	background-color: #ffff;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-bottom: 100px;
+	padding: 35px;
+	padding-top: 20px;
+}
+
+.landingImage {
+	float:left;
+}
+
+.summaryParagraph {
+	font-family: Arial;
+	color: #727272;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.visualizations {
+	margin-top: 30px;
+	margin-right: 50px;
+	background-color: #ffff;
+	text-align: center;
+}
+
+.vizAlign {
+	text-align: center;
+}
+
+.vizImages {
+	width: 500px;
+	height: auto;
+}
+
+/* Customize the panel for comparisons page*/
+.comparisons {
+	background-color: #ffff;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding: 35px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.comparisonText {
+	text-align: left;
+}
+
+/* Make a border around thumbnail for active page */
+.active {
+	border: 2px solid #08a59b;
+}
+
+
+/* Customize the headings of each section*/
+.summary h2, .visualizations h3, .comparisons h2 {
+	font-family: Georgia;
+	color: #08a59b;
+	font-weight: bold;
+	text-align: left;
+}
+
+/* Cutomize the hover attributes of navigation thumbnails */
+.visualizations img:hover, .comparisons img:hover{
+	border: 2px solid #08a59b;
+}
+
+.tempHover {
+	position: relative;
+	display: inline-block;
+}
+
+.tempHover .vizTop{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.tempHover:hover .vizTop{
+	display: inline;
+	opacity: 0.85;
+
+}
+
+.humHover {
+	position: relative;
+	display: inline-block;
+}
+
+.humHover .vizTop2{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.humHover:hover .vizTop2{
+	display: inline;
+	opacity: 0.85;
+
+}
+
+.cloudHover {
+	position: relative;
+	display: inline-block;
+}
+
+.cloudHover .vizTop3{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.cloudHover:hover .vizTop3{
+	display: inline;
+	opacity: 0.85;
+
+}
+
+.windHover {
+	position: relative;
+	display: inline-block;
+}
+
+.windHover .vizTop4{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 99;
+}
+
+.windHover:hover .vizTop4{
+	display: inline;
+	opacity: 0.80;
+
+}
+
+/* Customize footer */
+#footer {
+	background-color: #1ea8b2;
+	height: 56px;
+	margin: 0;
+}
+
+.panel-footer {
+	background-color: #6b6b6b;
+	color: #ffff;
+	text-align: center;
+	padding: 15px;
+}
+
+/* Customize page response for smaller screens*/
+@media (max-width: 800px) {
+.landingImage{
+	float: left;
+	width: 300px;
+	height: auto;
+}
+
+.summary {
+	background-color: #ffff;
+	margin: 35px;
+	margin-top: 30px;
+}
+
+.visualizations {
+	margin: 35px;
+	margin-bottom: 75px;
+	background-color: #ffff;
+}
+
+.vizThumb{
+	width: 130px;
+	height: 130px;
+}
+}

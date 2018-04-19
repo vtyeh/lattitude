@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lattitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="../lattitude.html">Lattitude</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="maxTemp.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity </a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="comparisons.html">Comparisons</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    <div class="row">
+    <div class="col-md-8 col-sm-6">
+        <div class="panel panel-default summary">
+            <div class="panel-body">
+                <h2>Cloudiness</h2>
+                <hr>
+                <p class="vizAlign">
+                <img src="../graphs/lat_vs_clouds1.png" class="vizImages">
+                <p class="summaryParagraph">
+                It seems that there tend to be more clouds near the equator as well as 
+                towards the North and South Poles. There are less clouds in cities between 
+                20 and 40 Deg. of latitude. This makes sense as there are a lot of rainforests
+                near the equator, and cities near the north, such as Seattle, Washington, 
+                tend to experience more rainfall than in Southern California.
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default visualizations">
+            <div class="panel-body">
+                <h3>Visualizations</h3>
+                <hr>
+                <div class="tempHover">
+                    <a href="maxTemp.html"><img src="../graphs/lat_vs_temp1.png" class="vizThumb"></a>
+                    <a href="maxTemp.html" class="vizTop"><img src="../thumbnails/tempThumb1.png" class="vizThumb"></a>
+                </div>
+                <div class="humHover">
+                    <a href="humidity.html"><img src="../graphs/lat_vs_hum1.png" class="vizThumb"></a>
+                    <a href="humidity.html" class="vizTop2"><img src="../thumbnails/humThumb1.png" class="vizThumb"></a>
+                </div>
+                <div class="cloudHover">
+                    <a href="cloudiness.html"><img src="../graphs/lat_vs_clouds1.png" class="active vizThumb"></a>
+                    <a href="cloudiness.html" class="vizTop3"><img src="../thumbnails/cloudThumb1.png" class="vizThumb"></a>
+                </div>
+                <div class="windHover">
+                    <a href="windspeed.html"><img src="../graphs/lat_vs_wind1.png" class="vizThumb"></a>
+                    <a href="windspeed.html" class="vizTop4"><img src="../thumbnails/windThumb1.png" class="vizThumb"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="panel panel-default" id="footer">
+                <div class="panel-footer">© Copyright Coding Bootcamp 2018</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

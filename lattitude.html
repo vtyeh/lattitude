@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lattitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
+</head>
+<body> 
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="lattitude.html">Lattitude</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/maxTemp.html">Max Temperature</a></li>
+                        <li><a href="pages/humidity.html">Humidity </a></li>
+                        <li><a href="pages/cloudiness.html">Cloudiness</a></li>
+                        <li><a href="pages/windspeed.html">Wind Speed</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="pages/comparisons.html">Comparisons</a></li>
+                    <li><a href="pages/data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    <div class="row">
+    <div class="col-md-8 col-sm-6">
+        <div class="panel panel-default summary">
+            <div class="panel-body">
+                <h2>Summary: Latitude vs. X</h2>
+                <hr>
+                <p>
+                    <img src="graphs/lat_vs_temp1.png" class="landingImage">
+                    <p class="summaryParagraph">
+                        The purpose of this project was to analyze how weather changes as you get closer to the equator.
+                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset 
+                        on over 500 cities.
+                    </p><br>
+                    <p class="summaryParagraph">
+                        After assembling the dataset, we used Maplotlib to plot various aspects of the weather vs. latitude. 
+                        Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides 
+                        the source data and visualizations created as part of the analysis, as well as explanations and descriptions 
+                        of any trends and correlations witnessed.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default visualizations">
+            <div class="panel-body">
+                <h3>Visualizations</h3>
+                <hr>
+                <div class="tempHover">
+                    <a href="pages/maxTemp.html"><img src="graphs/lat_vs_temp1.png" class="vizThumb"></a>
+                    <a href="pages/maxTemp.html" class="vizTop"><img src="thumbnails/tempThumb1.png" class="vizThumb"></a>
+                </div>
+                <div class="humHover">
+                    <a href="pages/humidity.html"><img src="graphs/lat_vs_hum1.png" class="vizThumb"></a>
+                    <a href="pages/humidity.html" class="vizTop2"><img src="thumbnails/humThumb1.png" class="vizThumb"></a>
+                </div>
+                <div class="cloudHover">
+                    <a href="pages/cloudiness.html"><img src="graphs/lat_vs_clouds1.png" class="vizThumb"></a>
+                    <a href="pages/cloudiness.html" class="vizTop3"><img src="thumbnails/cloudThumb1.png" class="vizThumb"></a>
+                </div>
+                <div class="windHover">
+                    <a href="pages/windspeed.html"><img src="graphs/lat_vs_wind1.png" class="vizThumb"></a>
+                    <a href="pages/windspeed.html" class="vizTop4"><img src="thumbnails/windThumb1.png" class="vizThumb"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="panel panel-default" id="footer">
+                <div class="panel-footer">© Copyright Coding Bootcamp 2018</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
