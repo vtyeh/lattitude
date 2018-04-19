@@ -9,6 +9,11 @@ body {
 	color: grey;
 }
 
+#myNavbar .dropdown-menu a {
+	color: grey;
+	background-color: white;
+}
+
 /* Shift the lattitude logo to the right */
 .navbar-header {
 	padding-left: 65px;
