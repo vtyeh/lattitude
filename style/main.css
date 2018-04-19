@@ -250,10 +250,10 @@ body {
 }
 
 /* Customize for mobile */
-@media (max-width: 300px) {
+@media (max-width: 480px) {
 .landingImage{
 	float: left;
-	width: 200px;
+	width: 250px;
 	height: auto;
 }
 
@@ -271,13 +271,18 @@ body {
 }
 
 .vizImages {
-	width: 200px;
+	width: 250px;
 	height: auto;
 }
 .comparisons {
 	margin-left: 10px;
 	margin-right: 10px;
 	padding: none;
+}
+
+.comparisons img {
+	width: 130px;
+	height: auto;
 }
 
 .vizThumb{
