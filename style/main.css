@@ -248,3 +248,40 @@ body {
 	height: 130px;
 }
 }
+
+/* Customize for mobile */
+@media (max-width: 320px) {
+.landingImage{
+	float: left;
+	width: 200px;
+	height: auto;
+}
+
+.summary {
+	background-color: #ffff;
+	margin: 35px;
+	margin-top: 30px;
+}
+
+.visualizations {
+	margin: 35px;
+	margin-bottom: 75px;
+	background-color: #ffff;
+	padding:none;
+}
+
+.vizImages {
+	width: 200px;
+	height: auto;
+}
+.comparisons {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: none;
+}
+
+.vizThumb{
+	width: 130px;
+	height: 130px;
+}
+}
