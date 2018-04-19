@@ -250,7 +250,7 @@ body {
 }
 
 /* Customize for mobile */
-@media (max-width: 320px) {
+@media (max-width: 300px) {
 .landingImage{
 	float: left;
 	width: 200px;
