@@ -231,8 +231,7 @@ body {
 	height: auto;
 }
 
-.summary {
-	background-color: #ffff;
+.summary, .comparisons {
 	margin: 35px;
 	margin-top: 30px;
 }
@@ -261,7 +260,7 @@ body {
 	height: auto;
 }
 
-.summary {
+.summary, .comparisons {
 	background-color: #ffff;
 	margin: 35px;
 	margin-top: 30px;
@@ -278,18 +277,9 @@ body {
 	width: 250px;
 	height: auto;
 }
-.comparisons {
-	margin-left: 10px;
-	margin-right: 10px;
-}
 
 .comparisons img {
 	width: 200px;
 	height: auto;
-}
-
-.vizThumb{
-	width: 130px;
-	height: 130px;
 }
 }
