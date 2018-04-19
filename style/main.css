@@ -74,7 +74,7 @@ body {
 	float:left;
 }
 
-.summaryParagraph {
+.summaryParagraph, .comparisonText {
 	font-family: Arial;
 	color: #727272;
 	font-size: 15px;
@@ -108,10 +108,6 @@ body {
 	padding: 35px;
 	padding-top: 20px;
 	text-align: center;
-}
-
-.comparisonText {
-	text-align: left;
 }
 
 /* Make a border around thumbnail for active page */
